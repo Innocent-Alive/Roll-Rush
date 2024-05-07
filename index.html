@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roll Rush</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main id="main">
+      <section class="player player-0 player-active">
+        <h2 class="name" id="name-0">Player 1</h2>
+        <p class="score" id="score-0">50</p>
+        <div class="current">
+          <p class="current-label">CURRENT</p>
+          <p class="current-score" id="current-0">0</p>
+        </div>
+      </section>
+      <section class="player player-1">
+        <h2 class="name" id="name-1">Player 2</h2>
+        <p class="score" id="score-1">50</p>
+        <div class="current">
+          <p class="current-label">CURRENT</p>
+          <p class="current-score" id="current-1">0</p>
+        </div>
+      </section>
+      <img
+        class="dice-image hidden"
+        src="./assets/dice-1.png"
+        alt="dice roll image"
+      />
+      <button type="button" class="btn btn-new">
+        <div class="labels">New Game</div>
+        <div class="icons"><i class="fa-solid fa-rotate"></i></div>
+      </button>
+      <button type="button" class="btn btn-roll">
+        <div class="labels">Dice Roll</div>
+        <div class="icons"><i class="fa-solid fa-dice"></i></div>
+      </button>
+      <button type="button" class="btn btn-hold">
+        <div class="labels">Hold</div>
+        <div class="icons"><i class="fa-solid fa-pause"></i></div>
+      </button>
+      <button type="button" class="btn btn-rules">
+        <div class="labels">Rules</div>
+        <div class="icons"><i class="fa-solid fa-bars"></i></div>
+      </button>
+    </main>
+    <audio
+      id="backgroundMusic"
+      src="./assets/gameMusic.mp3"
+      autoplay
+      loop
+    ></audio>
+    <div class="modal">
+      <h1>RULES</h1>
+      <p>1. Roll the dice using <i class="fa-solid fa-dice"></i> .</p>
+      <p>
+        2. If you get any number except 1 your current score will be added with
+        the number on the dice.
+      </p>
+      <p>
+        3. If you get 1 on the dice you will loose you current points and turn
+        will go to the next player.
+      </p>
+      <p>
+        4. You can hold your points using
+        <i class="fa-solid fa-pause"></i> which will add your current score to
+        the Total score and turn will go to next player.
+      </p>
+      <p>5. First to score 100 point will be the winner.</p>
+      <p>BEST OF LUCK!!!</p>
+
+      <button id="close-btn" type="button">&cross;</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
