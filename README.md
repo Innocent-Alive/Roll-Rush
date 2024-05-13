@@ -1,9 +1,9 @@
-# Roll-Rush
-## Preview of the game:
+# Roll Rush Game
+<h2>Preview of the game:</h2>
 <hr />
 <img src="./assets/roll-rush-preview.jpeg" />
 <hr />
-## Rules for the game: 
+<h2>Rules for the game:</h2>
 <ol>
   <li>Roll the dice using dice or roll button.</li>
   <li>If you get any number except 1 your current score will be added with the number on the dice.</li>
