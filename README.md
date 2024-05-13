@@ -10,5 +10,6 @@
   <li>If you get 1 on the dice you will loose you current points and turn will go to the next player.</li>
   <li>You can hold your points using hold button which will add your current score to the Total score and turn will go to next player.</li>
   <li>First to score 100 point will be the winner.</li>
+  <p>BEST OF LUCK!!!</p>
 <ol>
-<p>BEST OF LUCK!!!</p>
+
